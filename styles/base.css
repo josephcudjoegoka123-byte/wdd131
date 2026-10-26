@@ -122,6 +122,25 @@ main h1 {
     margin-right: 15px;
     margin-top: 10px;
 }
+.flag-figure {
+    float: left;
+    margin-right: 0 15px 0 0;
+    text-align: center;
+    border: 1px;
+    padding: 10px;
+}
+
+.flag-figure img.flag {
+    width: 120px;
+    float: none;
+    margin: 0 auto;
+}
+
+.flag-figure figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 5px;
+}
 
 footer {
     background-color: #1d4d72;
