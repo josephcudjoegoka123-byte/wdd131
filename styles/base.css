@@ -124,7 +124,7 @@ main h1 {
 }
 .flag-figure {
     float: left;
-    margin-right: 0 15px 0 0;
+    margin-right: 15px;
     text-align: center;
     border: 1px;
     padding: 10px;
