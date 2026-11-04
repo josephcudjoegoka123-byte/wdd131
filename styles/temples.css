@@ -66,11 +66,6 @@ nav {
   background-color: #555;
 }
 
-.navigation a.active {
-  background-color: #eee;
-  color: #1d4d72;
-  font-weight: bold;
-}
 .navigation.open {
   display: flex;
   gap: 0.6rem;
