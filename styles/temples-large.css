@@ -1,0 +1,39 @@
+/* temples-large.css - LARGE ONLY */
+@media screen and (min-width: 640px) {
+  #menu {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

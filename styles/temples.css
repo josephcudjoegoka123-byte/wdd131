@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: #1d4d72;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h2 {
+  text-align: center;
+  margin: 1rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1rem;
+  justify-items: center;
+}
+.navigation {
+  display: none;
+  list-style: none;
+  background-color: #1d4d72;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  gap:1rem;
+  left: 0;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: left;
+}
+
+.navigation a:hover {
+  background-color: #555;
+}
+
+.navigation a.active {
+  background-color: #eee;
+  color: #1d4d72;
+  font-weight: bold;
+}
+.navigation.open {
+  display: flex;
+  gap: 0.6rem;
+}
+#menu {
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰"; 
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+figure {
+  text-align: center;
+}
+figure img {
+  width: 250px;
+  height: auto;
+}
+figcaption {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+footer {
+    background-color: #1d4d72;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
