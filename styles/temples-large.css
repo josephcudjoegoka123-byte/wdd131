@@ -1,4 +1,4 @@
-/* temples-large.css - LARGE ONLY */
+
 @media screen and (min-width: 640px) {
   #menu {
     display: none;
@@ -10,9 +10,17 @@
     align-items: center;
   }
 
+  nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
   .navigation {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
     position: static;
     width: auto;
     background-color: transparent;
@@ -20,6 +28,7 @@
 
   .navigation a {
     text-align: center;
+    padding: 0.5rem 1rem;
   }
 
   .container {
