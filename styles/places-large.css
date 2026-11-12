@@ -1,0 +1,38 @@
+@media screen and (min-width: 700px) {
+     main {
+         position: relative;
+     }
+
+     .hero img {
+      width: 100%;
+      height: auto;
+     }
+
+     .data, .weather {
+      position: absolute;
+      bottom: 20px;
+      width: 38%;
+      background: rgba(255,255,255,0.9);
+      padding: 1rem;
+      border-top: 4px solid #FCD116;
+      text-align: left;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+      .weather {
+        right: 5%;
+      }
+      
+      .data{
+        left: 5%;
+      }
+      .data h2, .weather h2 {
+        color: #dc1507;
+      }
+      #weather-icon,
+      .weather-emoji{
+        display: none;
+      }
+      .weather h2::after {
+        content: " ⛅";
+      }
+    }
