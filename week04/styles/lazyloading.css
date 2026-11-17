@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+main{
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #1d4d72;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 100%;
+    background: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #1d4d72;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
