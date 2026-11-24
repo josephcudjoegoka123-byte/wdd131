@@ -3,11 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --red: #ce1126;
+    --gold: #FCD116;
+    --green: #006b3f;
+    --black: #1a1a1a;
+    --cream: #FFF8E7;
+    --white: #FFFFFF;
+    --capfig: #333;
+}
 
 body {
     font-family: "Open Sans",sans-serif;
-    background-color: #FFF8E7;
-    color: #1a1a1a;
+    background-color: var(--cream);
+    color: var(--black);
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
@@ -15,22 +24,54 @@ body {
 }
 
 header {
-    background-color: #006b3f;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    border-bottom: 5px solid #fcd116;
-    border-radius: 7px;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
 }
+.header-main {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+}
+.header-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--white);
+    flex-shrink: 0;
+}
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#course-title {
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+
 
 h2 {
     font-family: "Merriweather", serif;
-    color: #006b3f;
-    border-bottom: 3px solid #FCD116;
+    color: var(--green);
+    border-bottom: 3px solid var(--gold);
 }
 
 section {
-    background-color: white;
+    background-color: var(--white);
     padding: 1.5rem;
     margin: 1.5rem 0;
     border-radius: 8px;
@@ -44,10 +85,10 @@ section {
 .color-card {
     flex: 1;
     min-width:120px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--capfig);
     border-radius: 5px;
     overflow: hidden;
-    background-color: white;
+    background-color: var(--white);
 }
 .swatch {
     height: 50px;
@@ -55,20 +96,20 @@ section {
 }
 
 .swatch.green {
-    background-color: #006b3f;
+    background-color: var(--green);
 }
 .swatch.gold {
-    background-color: #FCD116;
+    background-color: var(--gold);
 }
 .swatch.cream {
-    background-color: #FFF8E7;
-    border-bottom: 1px solid#ddd;
+    background-color: var(--cream);
+    border-bottom: 1px solid var(--white);
 }
 .swatch.red {
-    background-color: #ce1126;
+    background-color: var(--red);
 }
 .swatch.black {
-    background-color: #1a1a1a;
+    background-color: var(--black);
 }
 .color-card p {
     padding: 10px;
@@ -83,11 +124,12 @@ figure {
 }
 figcaption {
   font-size: 0.8rem;
-  color: #333;
+  color: var(--capfig);
 }
+
 footer {
-    background-color: #006b3f;
-    color: #FFF8E7;
+    background-color: var(--green);
+    color: var(--white);
     padding: 1rem;
     border-radius: 8px;
 }
