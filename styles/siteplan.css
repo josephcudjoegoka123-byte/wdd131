@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans",sans-serif;
+    background-color: #FFF8E7;
+    color: #1a1a1a;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #006b3f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 5px solid #fcd116;
+    border-radius: 7px;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    color: #006b3f;
+    border-bottom: 3px solid #FCD116;
+}
+
+section {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+.color-palette {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.color-card {
+    flex: 1;
+    min-width:120px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+.swatch {
+    height: 50px;
+    width: 100%;
+}
+
+.swatch.green {
+    background-color: #006b3f;
+}
+.swatch.gold {
+    background-color: #FCD116;
+}
+.swatch.cream {
+    background-color: #FFF8E7;
+    border-bottom: 1px solid#ddd;
+}
+.swatch.red {
+    background-color: #ce1126;
+}
+.swatch.black {
+    background-color: #1a1a1a;
+}
+.color-card p {
+    padding: 10px;
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+figure {
+  text-align: center;
+  padding: 20px;
+}
+figcaption {
+  font-size: 0.8rem;
+  color: #333;
+}
+footer {
+    background-color: #006b3f;
+    color: #FFF8E7;
+    padding: 1rem;
+    border-radius: 8px;
+}
