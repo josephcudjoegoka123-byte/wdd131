@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: .5rem;
+    padding: 0;
+}
+
+body {
+    font-family:  Arial, sans-serif; 
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+header{
+    background-color: #4b0033;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+form {
+    background-color: #e6dbe6;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+label, legend {
+    font-weight: bold;
+}
+select, 
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: .6rem;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stars label {
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+}
+
+fieldset {
+    border:none;
+    padding: 0;
+}
+
+fieldset label {
+    font-weight: normal;
+    display: block;
+}
+
+.optional {
+    color: #555;
+    font-size: .85rem;
+    font-weight: normal;
+}
+
+input[type="submit"],
+#again {
+    padding: .8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#confirmation {
+    background-color: #e6dbe6;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+footer {
+    background-color: #4b0033;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}

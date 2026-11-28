@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form Activity for week 05.">
+    <meta name="author" content="Joseph Cudjoe Goka">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/produc-review-form.css">
+    <script src="../scripts/produc-review-form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form id="product-review" method="get" action="review.html">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="stars">
+                    <label>&star;<input type="radio" name="rating" value="1" required></label>
+                    <label>&star;&star;<input type="radio" name="rating" value="2" required></label>
+                    <label>&star;&star;&star;<input type="radio" name="rating" value="3" required></label>
+                    <label>&star;&star;&star;&star;<input type="radio" name="rating" value="4" required></label>
+                    <label>&star;&star;&star;&star;&star;<input type="radio" name="rating" value="5" required></label>
+                </div>
+            </fieldset>
+            <label for="intall-date">Date of Installment</label>
+            <input type="date" id="intall-date" name="intall-date" required>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product?<br><em>(Check all that apply)</em></legend>
+                <label><input type="checkbox" name="features" value="Durabilty">Durabilty</label>
+                <label><input type="checkbox" name="features" value="Ease of Use">Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Performance">Performance</label>
+                <label><input type="checkbox" name="features" value="Design">Design</label>
+            </fieldset>
+            <label for="review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="review" name="review" rows="4"></textarea>
+            <label for="username">Your Name <span class="optional">(Optional)</span></label> 
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review">
+        </form>
+        <section id="confirmation" class="hidden">
+            <h2>Thank you for your review</h2>
+            <p>Your review has been submitted.</p>
+            <p>You have submitted <span id="review-count">0</span> reviews</p>
+            <button id="again">Submit another review</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 2026©️Joseph Cudjoe Goka©️Ghana.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
